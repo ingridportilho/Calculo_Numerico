@@ -12,6 +12,8 @@ p1x = []
 p2x = []
 p3x = []
 
+# Método de Lagrange 
+#------------------------------------------------------------------
 def fp0x():
   p0x = px.copy()
   p0x.reverse()
@@ -89,6 +91,9 @@ intervalo2 = [-l2, -1/l3]
 print(intervalo1)
 print(intervalo2)
 
+#fim do método de Lagrange
+#---------------------------------------------------------------------------------------------
+
 #definir uma função
 def f(x): 
     return x**2 - 5
@@ -97,6 +102,9 @@ def f(x):
 def df(x):
     h = 0.000001
     return ((f(x+h) - f(x))/h) # definição de derivada : limite quando h -> 0
+
+# Método da bisseção
+#----------------------------------------------------------------------------------------------
 
 def m_biseccao(a,b,e):
     # intervalo [a,b]
@@ -122,6 +130,9 @@ def m_biseccao(a,b,e):
     else:
         print("Não existe raiz neste intervalo!")
     
+#Método de Newton
+#------------------------------------------------------------------------------------------
+
 def m_newton(x0, err, n0):
     # x0 = aproximação inicial
     # err = erro 
